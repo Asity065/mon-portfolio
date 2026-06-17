@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Amon - Dev Junior</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVIGATION ───────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">Asity<span>.</span>dev<span>()</span></div>
+  <ul class="nav-links">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#accueil"  onclick="closeMobile()">Accueil</a>
+  <a href="#apropos"  onclick="closeMobile()">À propos</a>
+  <a href="#projets"  onclick="closeMobile()">Projets</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ── HERO ─────────────────────────────────────────────────── -->
+<section id="accueil">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Je suis disponible pour des opportunités
+    </div>
+
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-amber"></div>
+        <div class="dot dot-green"></div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">
+          <span class="prompt">~/portfolio $</span>
+          <span class="output">whoami</span>
+        </div>
+        <div class="terminal-line">
+          <span class="output" id="typed-text"></span><span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="hero-heading">
+      Salut, je suis<br />
+      <span class="accent">Samuel Amon</span>
+    </h1>
+    <p class="hero-tagline">
+      Etudiant en Licence 3 Informatique à L'Université Internationale des sciences appliquées et de Technologie(UNiSAT),je recherche un contrat d'apprentissage dans différents domaines de l'informatique, notamment le développement web, le développement de logiciels, la cybersécurité et en Réseaux. Je suis passionné par les nouvelles technologies et j'ai hâte de mettre mes compétences en pratique dans un environnement professionnel stimulant.
+    </p>
+    <div class="hero-ctas">
+      <a href="#projets" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Voir mes projets
+      </a>
+      <a href="#contact" class="btn btn-outline">Me contacter</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── À PROPOS ──────────────────────────────────────────────── -->
+<section id="apropos">
+  <div class="reveal">
+    <p class="section-label">// 01. à propos</p>
+    <h2 class="section-title">Mon parcours</h2>
+  </div>
+  <div class="apropos-grid">
+    <div class="reveal">
+      <p class="text-muted mb">
+        Passionné par le L'informatique depuis toujours, j'ai décidé de transformer cette passion en métier. Après une formation intensive en informatique, je cherche à rejoindre une équipe ambitieuse où je pourrai apprendre et contribuer concrètement.
+      </p>
+      <p class="text-muted mb">
+        Mon approche : écrire du code propre, lisible et maintenable. Je crois que les détails font la différence — une animation subtile, un temps de chargement optimisé, une accessibilité soignée.
+      </p>
+      <p class="text-muted mb2">
+        En dehors du code, je contribue à des projets open source, je lis des articles sur les nouvelles tendances du web, et j'expérimente de nouvelles technologies.
+      </p>
+      <p class="section-label" style="margin-bottom:0.75rem;">// Outils &amp; technologies</p>
+      <div class="tags-grid">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript ES6+ (bases)</span>
+        <span class="tag">JAVA (bases)</span>
+        <span class="tag">PHP</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Figma</span>
+        <span class="tag">Flutter (bases)</span>
+        <span class="tag">Python (bases)</span>
+        <span class="tag">SQL </span>
+        <span class="tag">Springboot (bases)</span>
+        <span class="tag">Laravel (Apprentissage)</span>
+        <span class="tag">React (apprentissage)</span>
+        <span class="tag">CISCO PACKET TRACER (bases)</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="section-label" style="margin-bottom:1.25rem;">// Compétences</p>
+      <div class="skills-list">
+        <div class="skill-item">
+          <div class="skill-header"><span>HTML / CSS</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>JavaScript</span><span>50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>JAVA</span><span>60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Flutter</span><span>50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>PYTHON</span><span>40%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Springboot</span><span>50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Laravel</span><span>40%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>React</span><span>40%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>CISCO PACKET TRACER</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJETS ───────────────────────────────────────────────── -->
+<section id="projets">
+  <div class="reveal">
+    <p class="section-label">// 02. projets</p>
+    <h2 class="section-title">Mes réalisations</h2>
+    <p class="section-desc">Des projets fonctionnels qui mettent en pratique mes compétences apprises à travers diverses technologies.</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-thumb thumb-1">🌤️</div>
+      <div class="project-body">
+        <h3 class="project-title">Météo App</h3>
+        <p class="project-desc">Application météo en temps réel utilisant l'API OpenWeatherMap. Affiche la météo actuelle et les prévisions sur 5 jours avec des icônes animées selon les conditions.</p>
+        <div class="project-techs">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS Grid</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Fetch API</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            Demo
+          </a>
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb thumb-2">✅</div>
+      <div class="project-body">
+        <h3 class="project-title">To-Do List Interactive</h3>
+        <p class="project-desc">Gestionnaire de tâches avec filtres (tout / actif / terminé), drag-and-drop pour réordonner, et persistance locale via localStorage.</p>
+        <div class="project-techs">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS Flexbox</span>
+          <span class="tech-tag">JavaScript DOM</span>
+          <span class="tech-tag">localStorage</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            Demo
+          </a>
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb thumb-3">💱</div>
+      <div class="project-body">
+        <h3 class="project-title">Conception d'une application Web</h3>
+        <p class="project-desc">Conception et développement d'une application web moderne avec une interface utilisateur intuitive et des fonctionnalités avancées.</p>
+        <div class="project-techs">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS </span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">PhpMyAdmin</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            Demo
+          </a>
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb thumb-4">🧠</div>
+      <div class="project-body">
+        <h3 class="project-title">Quiz JavaScript</h3>
+        <p class="project-desc">Application de quiz interactif avec timer, score en temps réel, et questions récupérées depuis l'API Open Trivia Database. Design animé et responsive.</p>
+        <div class="project-techs">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS Animations</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Open Trivia API</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            Demo
+          </a>
+          <a href="#" class="project-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ───────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="reveal">
+    <p class="section-label">// 03. contact</p>
+    <h2 class="section-title">Travaillons ensemble</h2>
+    <p class="section-desc">Une idée de projet, une opportunité de stage, ou juste envie d'échanger ? Je suis disponible.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <a href="mailto:alex.martin@email.com" class="contact-card">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-value">amonsamuel60@gmail.com</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/samuel-amon-5b4a23393" target="_blank" class="contact-card">
+        <div class="contact-icon github-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">GitHub</div>
+          <div class="contact-card-value">www.github.com/Asity065</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/samuel-amon-5b4a23393" target="_blank" class="contact-card">
+        <div class="contact-icon linkedin-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">LinkedIn</div>
+          <div class="contact-card-value">www.linkedin.com/in/samuel-amon-5b4a23393</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="reveal">
+      <div class="form" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label>Prénom</label>
+            <input type="text" id="fname" placeholder="Amon" />
+          </div>
+          <div class="field">
+            <label>Nom</label>
+            <input type="text" id="lname" placeholder="yapi envoie" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="anon12@icloud.com" />
+        </div>
+        <div class="field">
+          <label>Objet</label>
+          <input type="text" id="subject" placeholder="Proposition de stage, projet, collaboration..." />
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea id="message" placeholder="Dites-moi ce que vous voulez dire..."></textarea>
+        </div>
+        <div class="form-status" id="formStatus"></div>
+        <button class="btn btn-primary" onclick="handleSubmit()">
+          Envoyer le message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <span>© Asity — Développé avec amour et beaucoup de musique</span>
+  <div class="footer-links">
+    <a href="https://github.com/Asity065" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/samuel-amon-5b4a23393" target="_blank">LinkedIn</a>
+    <a href="#accueil">↑ Haut</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
